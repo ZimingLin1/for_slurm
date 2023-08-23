@@ -18,7 +18,7 @@
 rm(list = ls())
 graphics.off()
 #install/load relevant packages
-list.of.packages <- c("tidyverse","caret","xgboost","bootstrap","mgcv","remotes", "ranger", "earth", "devtools")
+list.of.packages <- c("tidyverse","caret","xgboost","bootstrap","mgcv","remotes", "ranger", "earth")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages, type="binary")
 lapply(list.of.packages, library, character.only = TRUE)
